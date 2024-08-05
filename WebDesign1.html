@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Web Design</title>
+    <link rel="stylesheet" href="WebDesign1.css">
+</head>
+<body>
+    <div class="box4"></div>
+    <div>
+        <section class="section1">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </section>
+        <section>
+            <div class="box3"></div>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const boxes = document.querySelectorAll('.box1, .box2, .box3, .box4');
+
+            boxes.forEach(box => {
+                box.addEventListener('click', () => {
+                    box.classList.add('glow-bg');
+                    setTimeout(() => {
+                        box.classList.remove('glow-bg');
+                    }, 1000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
