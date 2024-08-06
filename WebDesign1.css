@@ -80,6 +80,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #89f7fe;
 }
 
 @keyframes glow-bg {
